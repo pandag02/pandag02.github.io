@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta  name="viewport" content="width=device-width, initial-scale=1", charset="utf-8">
+    <title>애러룸 열쇠</title>
+    <link rel="icon" href="Main_source/mainIcon.png">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <script src="index.js"></script>
+  </head>
+
+
+
+  <body>
+    
+    <!-- 네이게이션 바 시작 -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img src="Main_source/mainIcon.png" width="30" height="50">
+        </a>
+    
+        <a role="button" id = "burger" onclick="burgerOn()" class="navbar-burger"  aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+
+    
+      <div id="nav-links" class="navbar-menu is-centered"> <!--여기에 is-active를 class에 넣으면 burger 작동-->
+        <div class="navbar-start">
+          <div class="navbar-item has-dropdown is-hoverable">
+
+            <a class="navbar-link" >
+              <strong class = "nav_hover text_color" id="nav_title1">컴퓨터 언어</strong>
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item text_colorBlack"  href="ComputerLanguage/C,C++.html" >
+                C, C++
+              </a>
+              <a class="navbar-item text_colorBlack">
+                JAVA
+              </a>
+              <a class="navbar-item text_colorBlack">
+                PYTHON
+              </a>
+              <!--<hr class="navbar-divider">     얇은 회색 선을 그림-->
+              <a class="navbar-item text_colorBlack">
+                WEB
+              </a>
+            </div>
+          </div>
+    
+          <div class="navbar-item has-dropdown is-hoverable ">
+            <a class="navbar-link">
+              <strong class = "text_color nav_hover"id="nav_title2">컴퓨터 이론</strong>
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item"  href="ComputerTheory/ComputingThinking.html">
+                컴퓨팅사고
+              </a>
+              <a class="navbar-item"  href="ComputerTheory/ComputerStructure.html">
+                컴퓨터구조
+              </a>
+              <a class="navbar-item">
+                데이터구조
+              </a>
+              <a class="navbar-item">
+                기타
+              </a>
+              
+            </div>
+          </div>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+
+            <a class="navbar-link" >
+              <strong class = " nav_hover text_color"id="nav_title3">프로젝트</strong>
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item text_colorBlack">
+                BlazeMobile(Arduino)
+              </a>
+              <a class="navbar-item text_colorBlack">
+                디스코드봇(PYTHON)
+              </a>
+              <a class="navbar-item text_colorBlack">
+                &lt;covid&gt;&lt;/covid&gt;(WEB) 
+              </a>
+              <!--<hr class="navbar-divider">     얇은 회색 선을 그림-->
+              <a class="navbar-item text_colorBlack">
+                투두리스트+게임(Android Studio)
+              </a>
+            </div>
+          </div>
+
+
+
+    
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              <strong class = "text_color nav_hover"id="nav_title4">취미생활</strong>
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                독후감
+              </a>
+              <a class="navbar-item">
+                일본어
+              </a>
+              <a class="navbar-item">
+                기타
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+           
+            <div class="buttons">
+              <a class="Instar button" href="https://www.instagram.com/panda_g02/">
+                <strong>Instar</strong>
+              </a>
+              <a class="Github button" href="https://github.com/pandag02">
+                <strong>Github</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- 네이게이션 바 끝 -->
+
+
+    <!-- 화면 중앙 영상 이미지 시작 -->
+    <div class="mainMovie" align = "middle">
+      <video src="Main_source/hello.mp4" poster="hello.png" autoplay = "1" muted=""></video>
+    </div>
+    <!-- 화면 중앙 영상 이미지 끝 -->
+
+     <!-- 화면 하단 이미지 3개 시작 -->
+    <div class = "MainBottomLmage">
+    <br><br><br>
+
+   
+    <div class="columns is-mobile  is-gapless MainBottomLmage" align = "middle">
+      <div class="column">
+        <figure class="image is-128x128">
+          <a href="Main_bottom/Leeprofile.html">
+            <img class="is-rounded choice" src="Main_source/mainIcon.png" >
+          </a>
+          <h3 ><div class = "font-change">애러룸 열쇠</div></h3>
+        </figure>
+      </div>
+      <div class="column">
+        <figure class="image is-128x128">
+          <a href="Main_bottom/Pandaprofile.html">
+            <img class="is-rounded choice" src="Main_source/profilereal.png" >
+          </a>
+          <h3 ><div class = "font-change">초록판다</div></h3>
+        </figure>
+      </div>
+      <div class="column">
+        <figure class="image is-128x128">
+          <a href="Main_bottom/Party.html">
+            <img class="is-rounded choice" src="Main_source/party.png" >
+          </a>
+          <h3> <div class = "font-change">사진관</div></h3>
+        </figure>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+    <!-- 화면 하단 이미지 3개 끝 -->
+    
+  </body>
+  
+</html>

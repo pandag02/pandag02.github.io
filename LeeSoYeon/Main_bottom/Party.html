@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta  name="viewport" content="width=device-width, initial-scale=1", charset="utf-8">
+    <title>애러룸 열쇠</title>
+    <link rel="icon" href="../Main_source/mainIcon.png">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="../index.css" type="text/css">
+    
+  </head>
+
+
+
+  <body style= "background-color: rgb(245, 245, 238);">
+    <!-- 네이게이션 바 시작 -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="../index.html">
+          <img src="../Main_source/mainIcon.png" width="30" height="50">
+        </a>
+    
+        <a role="button" id = "burger" onclick="burgerOn()" class="navbar-burger"  aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+
+    
+      <div id="nav-links" class="navbar-menu is-centered"> <!--여기에 is-active를 class에 넣으면 burger 작동-->
+        <div class="navbar-start">
+          <div class="navbar-item has-dropdown is-hoverable">
+
+            <a class="navbar-link" >
+              <strong class = " nav_hover text_color">컴퓨터 언어</strong>
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item text_colorBlack">
+                C, C++
+              </a>
+              <a class="navbar-item text_colorBlack">
+                JAVA
+              </a>
+              <a class="navbar-item text_colorBlack">
+                PYTHON
+              </a>
+              <!--<hr class="navbar-divider">     얇은 회색 선을 그림-->
+              <a class="navbar-item text_colorBlack">
+                WEB
+              </a>
+            </div>
+          </div>
+    
+          <div class="navbar-item has-dropdown is-hoverable ">
+            <a class="navbar-link">
+              <strong class = "text_color nav_hover">컴퓨터 이론</strong>
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                컴퓨터구조
+              </a>
+              <a class="navbar-item">
+                데이터구조
+              </a>
+              <a class="navbar-item">
+                기타
+              </a>
+              
+            </div>
+          </div>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+
+            <a class="navbar-link" >
+              <strong class = " nav_hover text_color">프로젝트</strong>
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item text_colorBlack">
+                BlazeMobile(Arduino)
+              </a>
+              <a class="navbar-item text_colorBlack">
+                디스코드봇(PYTHON)
+              </a>
+              <a class="navbar-item text_colorBlack">
+                &lt;covid&gt;&lt;/covid&gt;(WEB) 
+              </a>
+              <!--<hr class="navbar-divider">     얇은 회색 선을 그림-->
+              <a class="navbar-item text_colorBlack">
+                투두리스트+게임(Android Studio)
+              </a>
+            </div>
+          </div>
+
+
+
+    
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              <strong class = "text_color nav_hover">취미생활</strong>
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                독후감
+              </a>
+              <a class="navbar-item">
+                일본어
+              </a>
+              <a class="navbar-item">
+                기타
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+           
+            <div class="buttons">
+              <a class="Instar button" href="https://www.instagram.com/panda_g02/">
+                <strong>Instar</strong>
+              </a>
+              <a class="Github button" href="https://github.com/pandag02">
+                <strong>Github</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- 네이게이션 바 끝 -->
+
+
+    <!--본문 시작-->
+    <br>
+    <br>
+
+    <div class="card diary center">
+      <div class="card-image">
+        <figure class="image ">
+          <img src="diary/7.1.jpeg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">23.07.01</p>
+            <p class="subtitle is-6">@경주, 문경</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          애들끼리 유럽 여행 가기 전에 본 날이다.<br>
+          여행을 길게가는만큼 짐이 많아서 많이 돌아다니지는 못했지만 그래도 재밌었다. <br>
+          우리는 분명 모이기 전에는 할말이 많았는데 왜 모이면 멍해질까<br>
+          여행에서 돌아올 때 또 보자! <br>
+          <a href="#">#서울숲</a>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    
+    <div class="card diary center">
+      <div class="card-image">
+        <figure class="image ">
+          <img src="diary/6.17.jpeg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">23.06.17</p>
+            <p class="subtitle is-6">@쿵이</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          방에 에어컨이 시험기간 내내 물이랑 얼음을 흘리더니 드디어 안켜진다.<br>
+          강제로 나와서 쿵이가 있는 카페에 와서 공부한다.<br>
+          이런 나를 불쌍하게 여겨준 쿵이가 내 다리에서 잠자는데 너무 힐링되었다.<br>
+          <a href="#">#매머드 커피</a>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="card diary center">
+      <div class="card-image">
+        <figure class="image ">
+          <img src="diary/6.3.jpeg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">23.06.03</p>
+            <p class="subtitle is-6">@어드밴처디자인 팀플</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          기말고사 기간에 과제와 범위로 조져지는 와중에도 팀플을 한다.<br>
+          어드벤처디자인 팀플하면서 많이 친해져서 너무 좋았다.<br>
+          내가 좀 헛소리를 많이 했는데 다들 그냥 그러려니 하고 지나가줘서 너무 고마워.<br>
+          다음 학기에도 볼 수 있으면 보고 같이 놀자. <br>
+
+          <a href="#">#아리수</a>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="card diary center">
+      <div class="card-image">
+        <figure class="image ">
+          <img src="diary/5.8.jpeg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">23.05.08</p>
+            <p class="subtitle is-6">@선생님들</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          내가 정말 사랑하는 공간이고 행복했던 곳.<br>
+          내가 아는 선생님들이 남아있는다면 언제까지고 가고 싶은 곳.<br>
+          찾아갈 때마다 너무나도 많은게 달라져서 놀란다.<br>
+          물론 내가 주로 있던 애러룸은 아직 그대로인 것 같아 좋았다.<br>
+          애러룸에 들어갈 때마다 울적하면서 좋은 기분이 느껴져서 이상한데 솔직히 난 이때가 아직도 너무나 그립다.<br>
+          <a href="#">#고등학교</a>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="card diary center">
+      <div class="card-image">
+        <figure class="image ">
+          <img src="diary/5.7.jpeg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">23.05.07</p>
+            <p class="subtitle is-6">@지연</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          매번 서로 카톡하면서 우리 언제 보지? 했는데 이제야 봤네<br>
+          모여서 잠깐 떠든 것 같은데도 왜 저녁 시간이 되는건지 이해가 안간다.<br>
+          거의 매일 같이 카톡을 하는데도 할 말이 너무 많다.<br>
+          와중에 이디야 신상 오트녹차라떼 너무 맛있다.<br>
+          <a href="#">#이디야 커피</a>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+
+    <div class="card diary center">
+      <div class="card-image">
+        <figure class="image ">
+          <img src="diary/5.6.jpeg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">23.05.06</p>
+            <p class="subtitle is-6">@민정, 예진</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          보자마자 내 생각에 녹차 쿠키 직접 구워준 예진아 너무 고마워.<br>
+          하나씩 먹다보니까 금방 다 먹을만큼 맛있었어.<br>
+          와중에 날씨 판단 잘못해서 춥게 입고 나왔는데 옷 빌려준 민정이도 고마워.<br>
+          덕분에 진짜 힐링하고 간다. 빠른 시일 내로 또 봤으면 좋겠다.<br>
+          <a href="#">#몬스터커피</a>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+
+    <div class="card diary center">
+      <div class="card-image">
+        <figure class="image ">
+          <img src="diary/5.5.jpeg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">23.05.05</p>
+            <p class="subtitle is-6">@현주</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          언제 연락해도 정말 좋은 친구인데 또 얼굴 보니까 더 좋다.<br>
+          떠들고 산책하고 노래방도 가고 정말 재밌었다.<br> 
+          다음번에도 또 같이 노래방 가자.<br>
+          <a href="#">#영일대 해수욕장</a>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+
+
+    <div class="card diary center">
+      <div class="card-image">
+        <figure class="image ">
+          <img src="diary/4.26.jpeg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">23.04.26</p>
+            <p class="subtitle is-6">@소원지</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          학교 다니면서 어떤 행사에도 참여 안하고 지냈는데 이번에는 해보고 싶어서 도전해봤다.<br>
+          이제는 학점을 잘받는 것도 포기하고 그냥 졸업만을 바라보고 지내고 있다.<br>
+          뭔가 열정도 힘도 없어서 그냥저냥 지내는 중.<br>
+          이대로 지내면 안된다는 것을 알지만 그럼에도 뭔가 할 힘이 없다.<br>
+          <a href="#">#중앙광장</a>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+
+
+
+    
+
+    <div class="card diary center">
+      <div class="card-image">
+        <figure class="image ">
+          <img src="diary/4.15.jpeg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">23.04.15</p>
+            <p class="subtitle is-6">@룸메 언니</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          둘 다 어느정도 감기도 나은 김에 한 번 즐겨본 방구석 파티.<br>
+          비록 다 근처에서 사온거지만 간만에 제대로 먹고 즐겼다.<br>
+          같이 지내면서 한 번도 안싸우고 함께 놀아줘서 너무나도 고마운 언니<br>
+          <a href="#">#방구석 파티</a>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+
+
+    
+
+    <div class="card diary center">
+      <div class="card-image">
+        <figure class="image ">
+          <img src="diary/4.2.jpeg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">23.04.02</p>
+            <p class="subtitle is-6">@룸메 언니</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          날씨가 너무 좋은 봄날에 언니랑 같이 꽃놀이를 나왔다.<br>
+          비록 둘 다 힘들어서 학교 근처에서만 놀았지만 그래도 제대로 논 것 같아서 너무 좋았다.<br>
+          언니랑 둘 다 감기 걸려서 힘들었는데 그래도 좀 밖에 나오니까 좋았다.<br>
+          <a href="#">#벚꽃놀이</a>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="card diary center">
+      <div class="card-image">
+        <figure class="image ">
+          <img src="diary/3.25.jpeg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">23.03.25</p>
+            <p class="subtitle is-6">@경주, 문경</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          이렇게 자주 모이려면 역시 한 명이 휴학을 해야 하는걸까?<br>
+          그래도 자주 볼 수 있어서 너무 좋아.<br>
+          아직도 생활이 너무 낯선데 너희가 있어서 너무 좋다.<br>
+          <a href="#">#데코아발림</a>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="card diary center">
+      <div class="card-image">
+        <figure class="image ">
+          <img src="diary/3.23.jpeg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">23.03.23</p>
+            <p class="subtitle is-6">@어드밴처디자인 팀플</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          우리 아이디어를 전면 수정한다고 다 같이 고생 많았다.<br>
+          이건 조민준씨가 그려준 우리 아이디어 정리본?<br>
+          너무 귀엽게 잘그린 것 같아서 일단 사진 찍었다.<br>
+          <a href="#">#BlazeMobile</a>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="card diary center">
+      <div class="card-image">
+        <figure class="image ">
+          <img src="diary/3.20.jpeg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">23.03.20</p>
+            <p class="subtitle is-6">@큰외삼촌</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          저녁이나 같이 한끼 하자고 하셔서 갔는데 빈 손으로 가기 뭐해서 사서 간 빵.<br>
+          저녁은 맛있었는데 내가 준비한 빵의 맛이 생각보다 애매해서 슬펐다.<br>
+          <a href="#">#학교 근처 빵집</a>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="card diary center">
+      <div class="card-image">
+        <figure class="image ">
+          <img src="diary/3.4.jpeg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">23.03.04</p>
+            <p class="subtitle is-6">@경주</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          자주 보니까 뭔가 중학교 때 생각도 나고 너무 좋다.<br>
+          학기 중에도 이렇게 한번씩 볼 수 있으면 좋겠다.<br>
+          <a href="#">#금별 맥주</a>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="card diary center">
+      <div class="card-image">
+        <figure class="image ">
+          <img src="diary/2.28.jpeg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">23.02.28</p>
+            <p class="subtitle is-6">@경주</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          같은 윗동네 지내서 자주 보자고 했지만 둘 다 철저한 집순이라서 이제야 모였다.<br>
+          와중에 나는 명동 바로 옆에 살면서 명동 성당을 이제야 처음 왔다.<br>
+          덕분에 구경 잘했어. <br>
+          <a href="#">#명동 성당</a>
+          <br>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="card diary center">
+      <div class="card-image">
+        <figure class="image ">
+          <img src="diary/2.25.jpeg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">23.02.25</p>
+            <p class="subtitle is-6">@큰외삼촌</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          서울 구경 시켜주시는 길에 다른 곳에는 없다는 베스킨라빈스 브라운에 왔다.<br>
+          내가 알던 베스킨라빈스랑 달랐지만 새로운 경험이었다.<br>
+          한번쯤 오기 좋은 곳이었고 역시 맛있다.<br>
+          <a href="#">#베스킨라빈스 브라운</a>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    
+    <br>
+    <br>
+
+    <div class="card diary center">
+      <div class="card-image">
+        <figure class="image">
+          <img src="diary/2.15.jpeg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">23.02.15</p>
+            <p class="subtitle is-6">@수경 언니</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          조교 일하면서 가장 친하게 지낸 언니<br>
+          언니 덕분에 조교 일 재밌게 했고 앞으로도 오래 봤으면 좋겠어.<br>
+          정말 시간 가는줄 모르고 대화했고 다음에 또 보는 날 기대하고 있을게.<br>
+          <a href="#">#황리단길</a>
+          <br>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="card diary center">
+      <div class="card-image">
+        <figure class="image">
+          <img src="diary/2.14.jpeg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">23.02.14</p>
+            <p class="subtitle is-6">@민정, 미정, 소림</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          친구한지가 몇년인데 이 조합으로 술 처음 마신다는게 놀랍다.<br>
+          간만에 모여도 왜 어제 본 것 같냐... 다들 변하지 않아서 좋네<br>
+          <a href="#">#영일대 해수욕장</a>
+          <br>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="card diary center">
+      <div class="card-image">
+        <figure class="image">
+          <img src="diary/2.8.jpeg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">23.02.08</p>
+            <p class="subtitle is-6">@소윤</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          근처 사는데 이렇게 보기 힘들줄 몰랐다.<br>
+          요즘 농구랑 과외 때문에 바쁘다는데 몸 건강 챙기면서 해.<br>
+          <a href="#">#영일대 해수욕장</a>
+          <br>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="card diary center">
+      <div class="card-image">
+        <figure class="image">
+          <img src="diary/1.31.jpeg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">23.01.31</p>
+            <p class="subtitle is-6">@문경, 경주</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          방학마다 주기적으로 보는 친구들.<br> 
+          진짜 10년이 지나도 지금처럼 놀 것 같다.<br>
+          그냥 얼굴만 봐도 즐겁다.<br>
+          <a href="#">#동궁과 월지</a>
+          <br>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+
+    <div class="card diary center" >
+      <div class="card-image">
+        <figure class="image">
+          <img src="diary/1.22.jpeg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">23.01.22</p>
+            <p class="subtitle is-6">@친언니</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          새해 기념으로 기분 좋게 왔는데 왜 이렇게 비장하게 나온거지?<br>
+          <a href="#">#외가댁</a>
+          <br>
+        </div>
+      </div>
+    </div>
+    <!--본문 끝-->
+    <br>
+    <br>
+
+
+    
+  </body>
+</html>

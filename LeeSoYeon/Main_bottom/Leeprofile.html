@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta  name="viewport" content="width=device-width, initial-scale=1", charset="utf-8">
+    <title>애러룸 열쇠</title>
+    <link rel="icon" href="../Main_source/mainIcon.png">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <link rel="stylesheet" href="../index.css" type="text/css">
+    <script src="../index.js"></script>
+
+  </head>
+
+
+  <body style= "background-color: rgb(245, 245, 238);">
+
+    <!-- 네이게이션 바 시작 -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="../index.html">
+          <img src="../Main_source/mainIcon.png" width="30" height="50">
+        </a>
+    
+        <a role="button" id = "burger" onclick="burgerOn()" class="navbar-burger"  aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+
+    
+      <div id="nav-links" class="navbar-menu is-centered"> <!--여기에 is-active를 class에 넣으면 burger 작동-->
+        <div class="navbar-start">
+          <div class="navbar-item has-dropdown is-hoverable">
+
+            <a class="navbar-link" >
+              <strong class = " nav_hover text_color">컴퓨터 언어</strong>
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item text_colorBlack">
+                C, C++
+              </a>
+              <a class="navbar-item text_colorBlack">
+                JAVA
+              </a>
+              <a class="navbar-item text_colorBlack">
+                PYTHON
+              </a>
+              <!--<hr class="navbar-divider">     얇은 회색 선을 그림-->
+              <a class="navbar-item text_colorBlack">
+                WEB
+              </a>
+            </div>
+          </div>
+    
+          <div class="navbar-item has-dropdown is-hoverable ">
+            <a class="navbar-link">
+              <strong class = "text_color nav_hover">컴퓨터 이론</strong>
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                컴퓨터구조
+              </a>
+              <a class="navbar-item">
+                데이터구조
+              </a>
+              <a class="navbar-item">
+                기타
+              </a>
+              
+            </div>
+          </div>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+
+            <a class="navbar-link" >
+              <strong class = " nav_hover text_color">프로젝트</strong>
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item text_colorBlack">
+                BlazeMobile(Arduino)
+              </a>
+              <a class="navbar-item text_colorBlack">
+                디스코드봇(PYTHON)
+              </a>
+              <a class="navbar-item text_colorBlack">
+                &lt;covid&gt;&lt;/covid&gt;(WEB) 
+              </a>
+              <!--<hr class="navbar-divider">     얇은 회색 선을 그림-->
+              <a class="navbar-item text_colorBlack">
+                투두리스트+게임(Android Studio)
+              </a>
+            </div>
+          </div>
+
+
+
+    
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              <strong class = "text_color nav_hover">취미생활</strong>
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                독후감
+              </a>
+              <a class="navbar-item">
+                일본어
+              </a>
+              <a class="navbar-item">
+                기타
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+           
+            <div class="buttons">
+              <a class="Instar button" href="https://www.instagram.com/panda_g02/">
+                <strong>Instar</strong>
+              </a>
+              <a class="Github button" href="https://github.com/pandag02">
+                <strong>Github</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- 네이게이션 바 끝 -->
+
+
+    <!-- 메인 설명 시작 -->
+    <div class="columns">
+      <div class="is-3 column ">
+        <img class = "main" src="../Main_source/mainIcon.png" style="display: block; margin: 0 auto; width:300px; height:300px">
+  
+      </div>
+      <div class="column main">
+        <br>
+        <strong>이름: </strong>애러룸 열쇠 <br>
+        <strong>생년월일: </strong>2002~ <br>
+        <strong>MBTI: </strong>INTJ/ISTJ <br>
+        <strong>직업: </strong>대학생-컴퓨터공학과 <br>
+        <strong>좋아하는 것: </strong>전공 관련, 음악 듣기, 누워있기 <br>
+        <strong>잘먹는 것: </strong>녹차라떼(샷 추가), 커피, 초콜릿 첨가된 단 것 <br>
+        <strong>좌우명: </strong>이틀 밤을 새워서 안되면 삼일 밤을 새우라(feat. 애러룸 주인) <br>
+        <strong>할 수 있는 것: </strong>Arduino, C, C++, WEB(HTML, CSS, JS), APP(Android Studio) <br>
+
+      </div>
+      <br>
+    </div>   
+    <!-- 메인 설명 끝 -->
+
+    <!--연혁 소개 시작-->
+    <div class="history main">
+      <div>
+        <h2>2015</h2>
+        <ol>
+          <li>중학교 정보 시간 엔트리, 스크레치 블로코딩</li>
+         </ol>
+      </div>
+      <div>
+        <h2>2016</h2>
+        <ol>
+          <li>중학교 정보 시간 PYTHON</li>
+         </ol>
+      </div>
+      <div>
+        <h2>2018</h2>
+        <ol>
+          <li>고등학교 컴퓨터 동아리 "MECHANICA" 부원 활동</li>
+          <li>청소년미래상상경진대회 입상(빛나는 화분)</li>
+          <li>교내프로그래밍대회 입상</li>
+         </ol>
+      </div>
+   
+      <div>
+        <h2>2019</h2>
+        <ol>
+          <li>고등학교 컴퓨터 동아리 "MECHANICA" 기장</li>
+          <li>경상북도 청소년 해커톤 입상(교통약자배려석)</li>
+          <li>교내프로그래밍대회 입상(빛나는 화분)</li>
+        </ol>
+      </div>
+   
+      <div>
+        <h2>2020</h2>
+        <ol>
+          <li>교내아이디어경진대회 입상(마스크 소독기)</li>
+        </ol>
+      </div>
+      <div>
+        <h2>2021</h2>
+        <ol>
+          <li>컴퓨터공학과 입학</li>
+          <li>웹프로그래밍(코로나 API이용 웹 제작)</li>
+        </ol>
+      </div>
+      <div>
+        <h2>2022</h2>
+        <ol>
+          <li>카메라로 옷 판단 후  음료 추천하는 AI + WEB</li>
+          <li>디스코드봇(python, 독서실용)</li>
+          <li>투두 리스트 어플(Android Studio, DB사용)</li>
+        </ol>
+      </div>
+      <div>
+        <h2>2023</h2>
+        <ol>
+          <li>자동 이동 소화기-Blaze Mobile(Arduino)</li>
+        </ol>
+      </div>
+    </div>
+    <!--연혁 소개 끝-->
+   
+    <br>
+
+
+
+
+      
+    
+    
+  </body>
+</html>

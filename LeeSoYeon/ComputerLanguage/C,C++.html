@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" , charset="utf-8">
+  <title>애러룸 열쇠</title>
+  <link rel="icon" href="../Main_source/mainIcon.png">
+  <link rel="stylesheet" href="../index.css" type="text/css">
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <script src="../index.js"></script>
+</head>
+
+
+
+<body>
+
+  <!-- 네이게이션 바 시작 -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../index.html">
+        <img src="../Main_source/mainIcon.png" width="30" height="50">
+      </a>
+
+      <a role="button" id="burger" onclick="burgerOn()" class="navbar-burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+
+
+    <div id="nav-links" class="navbar-menu is-centered"> <!--여기에 is-active를 class에 넣으면 burger 작동-->
+      <div class="navbar-start">
+        <div class="navbar-item has-dropdown is-hoverable">
+
+          <a class="navbar-link">
+            <strong class="nav_hover text_color" id="nav_title1">컴퓨터 언어</strong>
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item text_colorBlack" href="C,C++.html">
+              C, C++
+            </a>
+            <a class="navbar-item text_colorBlack">
+              JAVA
+            </a>
+            <a class="navbar-item text_colorBlack">
+              PYTHON
+            </a>
+            <!--<hr class="navbar-divider">     얇은 회색 선을 그림-->
+            <a class="navbar-item text_colorBlack">
+              WEB
+            </a>
+          </div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable ">
+          <a class="navbar-link">
+            <strong class="text_color nav_hover" id="nav_title2">컴퓨터 이론</strong>
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              컴퓨터구조
+            </a>
+            <a class="navbar-item">
+              데이터구조
+            </a>
+            <a class="navbar-item">
+              기타
+            </a>
+
+          </div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+
+          <a class="navbar-link">
+            <strong class=" nav_hover text_color" id="nav_title3">프로젝트</strong>
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item text_colorBlack">
+              BlazeMobile(Arduino)
+            </a>
+            <a class="navbar-item text_colorBlack">
+              디스코드봇(PYTHON)
+            </a>
+            <a class="navbar-item text_colorBlack">
+              &lt;covid&gt;&lt;/covid&gt;(WEB)
+            </a>
+            <!--<hr class="navbar-divider">     얇은 회색 선을 그림-->
+            <a class="navbar-item text_colorBlack">
+              투두리스트+게임(Android Studio)
+            </a>
+          </div>
+        </div>
+
+
+
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            <strong class="text_color nav_hover" id="nav_title4">취미생활</strong>
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              독후감
+            </a>
+            <a class="navbar-item">
+              일본어
+            </a>
+            <a class="navbar-item">
+              기타
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+
+          <div class="buttons">
+            <a class="Instar button" href="https://www.instagram.com/panda_g02/">
+              <strong>Instar</strong>
+            </a>
+            <a class="Github button" href="https://github.com/pandag02">
+              <strong>Github</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- 네이게이션 바 끝 -->
+
+
+  <!--본문 시작-->
+  <div class="columns">
+    <!--본문의 사이드바 시작-->
+    <div class="column is-one-fifth sideBar">
+      <div class="C marginTitle">
+        C언어
+        <hr>
+        <div class="sideBarC" onclick="visible(0, 18)">0. 프롤로그</div> <!--어떤 책을 기준으로 작성했는지 어쩌다가 공부를 시작했는지 등-->
+        <div class="sideBarC" onclick="visible(1, 18)">1. 프로그래밍 언어 개요</div>
+        <div class="sideBarC" onclick="visible(2, 18)">2. 프롤로그</div>
+        <div class="sideBarC" onclick="visible(3, 18)">3. 프롤로그</div>
+        <div class="sideBarC" onclick="visible(4, 18)">4. 프롤로그</div>
+        <div class="sideBarC" onclick="visible(5, 18)">5. 프롤로그</div>
+        <div class="sideBarC" onclick="visible(6, 18)">6. 프롤로그</div>
+        <div class="sideBarC" onclick="visible(7, 18)">7. 프롤로그</div>
+        <div class="sideBarC" onclick="visible(8, 18)">8. 프롤로그</div>
+        <div class="sideBarC" onclick="visible(9, 18)">9. 프롤로그</div>
+        <div class="sideBarC" onclick="visible(10, 18)">10. 프롤로그</div>
+        <div class="sideBarC" onclick="visible(11, 18)">11. 프롤로그</div>
+        <div class="sideBarC" onclick="visible(12, 18)">12. 프롤로그</div>
+        <div class="sideBarC" onclick="visible(13, 18)">13. 프롤로그</div>
+        <div class="sideBarC" onclick="visible(14, 18)">14. 프롤로그</div>
+        <div class="sideBarC" onclick="visible(15, 18)">15. 프롤로그</div>
+        <div class="sideBarC" onclick="visible(16, 18)">16. 프롤로그</div>
+        <div class="sideBarC" onclick="visible(17, 18)">17. 에필로그</div> <!--공부를 하면서 깨달은 점-->
+
+
+      </div>
+
+
+
+    </div>
+    <!--본문의 사이드바 끝-->
+
+    <!--본문 시작-->
+    <div class="textBackground">
+      <div class="column marginText">
+        <div id="0text">
+          <div class="title textTitle" style="display : block;">
+            0. C언어-프롤로그
+          </div>
+          <br>
+          <!--본문 내용을 적으시오.-->
+          <div style="margin-right: 100px;">
+            &nbsp;&nbsp;본 블로그 글은 "C언어로 배우는 프로그래밍 기초 perfect C 3판"을 기준으로 작성되었으며 이후에 더 추가된 자료가 생길 수도 있습니다. <br>
+            지금 글을 쓰고 있는 본인은 이미 C언어를 2년 넘게 사용해왔기에 기초에 대한 설명을 다소 부족하게 할 수 있다는 점을 양해해주시길 바랍니다.
+            <br><br>
+            C언어의 이론적 장점이나 다른 언어와의 비교는 이미 인터넷과 도서에 자세히 나와있기에 필자는 그저 지극히 개인적으로 느낀 것을 이야기하려고 한다.
+            이 글을 읽고 오히려 더 방해가 될 수도 있기에 그저 '이런 사람도 있구나.'하고 넘겨주기를 바란다.
+            <br><br>
+            개인적인 견해지만 만약 독자가 JAVA와 같은 객체지향 언어를 알고 있다면 C언어의 이론은 그보다 훨씬 쉽게 다가올 수 있다.
+            필자는 C언어와 같은 절차지향 언어를 먼저 학습하고 객체지향 언어를 학습하였기에 그렇게 느낀걸지는 몰라도 객체지향 언어의 이론이 좀 더 어렵게 다가왔었다.
+            <br><br>
+            아마도 필자는 C언어의 꽃이라고 불리우는 포인터 부분을 금방 이해하고 넘어갔기에 그런 것일 수 있다.
+            여기서 포인터는 이후에도 자세히 다루겠지만 C언어를 학습하는데 아주 중요한 요소이다.
+            그렇기에 이를 필수적으로 이해하고 넘어가야 하며 인터넷과 각종 도서를 이용하여 문제를 추가적으로 풀어보는 것을 권장한다.
+
+            <br><br>
+            2023.06.27 작성
+
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+
+          </div>
+        </div>
+
+
+        <div style="display: none;" id="1text">
+          <div class="textTitle title">
+            1. C언어-프로그래밍 언어 개요
+          </div>
+          <br>
+          <!--본문 내용을 적으시오.-->
+          <div style="margin-right: 100px;">
+            
+          </div>
+          
+
+        </div>
+
+
+        <div id="2text" style="display: none;">
+          <div class="title textTitle">
+            2. C언어 프롤로그
+          </div>
+          <br>
+          <!--본문 내용을 적으시오.-->
+          왁왁
+
+        </div>
+
+        <div id="3text" style="display: none;">
+          <div class="title textTitle">
+            3. C언어 프롤로그
+          </div>
+          <br>
+          <!--본문 내용을 적으시오.-->
+          왁왁
+
+        </div>
+
+        <div id="4text" style="display: none;">
+          <div class="title textTitle">
+            4. C언어 프롤로그
+          </div>
+          <br>
+          <!--본문 내용을 적으시오.-->
+          왁왁
+
+        </div>
+
+        <div id="5text" style="display: none;">
+          <div class="title textTitle">
+            5. C언어 프롤로그
+          </div>
+          <br>
+          <!--본문 내용을 적으시오.-->
+          왁왁
+
+        </div>
+
+        <div id="6text" style="display: none;">
+          <div class="title textTitle">
+            6. C언어 프롤로그
+          </div>
+          <br>
+          <!--본문 내용을 적으시오.-->
+          왁왁
+
+        </div>
+
+        <div id="7text" style="display: none;">
+          <div class="title textTitle">
+            7. C언어 프롤로그
+          </div>
+          <br>
+          <!--본문 내용을 적으시오.-->
+          왁왁
+
+        </div>
+
+        <div id="8text" style="display: none;">
+          <div class="title textTitle">
+            8. C언어 프롤로그
+          </div>
+          <br>
+          <!--본문 내용을 적으시오.-->
+          왁왁
+
+        </div>
+
+        <div id="9text" style="display: none;">
+          <div class="title textTitle">
+            9. C언어 프롤로그
+          </div>
+          <br>
+          <!--본문 내용을 적으시오.-->
+          왁왁
+
+        </div>
+
+        <div id="10text" style="display: none;">
+          <div class="title textTitle">
+            10. C언어 프롤로그
+          </div>
+          <br>
+          <!--본문 내용을 적으시오.-->
+          왁왁
+
+        </div>
+
+        <div id="11text" style="display: none;">
+          <div class="title textTitle">
+            11. C언어 프롤로그
+          </div>
+          <br>
+          <!--본문 내용을 적으시오.-->
+          왁왁
+
+        </div>
+
+        <div id="12text" style="display: none;">
+          <div class="title textTitle">
+            12. C언어 프롤로그
+          </div>
+          <br>
+          <!--본문 내용을 적으시오.-->
+          왁왁
+
+        </div>
+
+        <div id="13text" style="display: none;">
+          <div class="title textTitle">
+            13. C언어 프롤로그
+          </div>
+          <br>
+          <!--본문 내용을 적으시오.-->
+          왁왁
+
+        </div>
+
+        <div id="14text" style="display: none;">
+          <div class="title textTitle">
+            14. C언어 프롤로그
+          </div>
+          <br>
+          <!--본문 내용을 적으시오.-->
+          왁왁
+
+        </div>
+        <div id="15text" style="display: none;">
+          <div class="title textTitle">
+            15. C언어 프롤로그
+          </div>
+          <br>
+          <!--본문 내용을 적으시오.-->
+          왁왁
+
+        </div>
+
+        <div id="16text" style="display: none;">
+          <div class="title textTitle">
+            16. C언어 프롤로그
+          </div>
+          <br>
+          <!--본문 내용을 적으시오.-->
+          왁왁
+
+        </div>
+
+        <div id="17text" style="display: none;">
+          <div class="title textTitle">
+            17. C언어 프롤로그
+          </div>
+          <br>
+          <!--본문 내용을 적으시오.-->
+          왁왁
+
+        </div>
+
+
+
+
+      </div>
+      <!--본문 끝-->
+    </div>
+    <!--본문 끝-->
+  </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

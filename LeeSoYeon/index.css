@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+
+body, html, div, a { 
+    font-family: 'Orbit', sans-serif;
+}
+hr {
+  background-color:rgb(63, 62, 71) !important; 
+  border: none;
+  display: block;
+  height: 1px !important;
+  margin: 5px 0 !important;
+  
+}
+
+/* Navbar CSS */
+nav {
+    color: rgb(235, 235, 240);
+}
+
+.title,
+.font-change {
+    font-family: 'Orbit', sans-serif;
+}
+
+.mainMovie {
+    object-fit: cover;
+    width: 100%;
+    background-color: rgb(227, 230, 207);
+}
+
+.nav_color,
+.navbar,
+.navbar-brand,
+.navbar-menu {
+    background-color: rgb(83, 112, 98);
+}
+
+.Instar,
+.Github {
+    background-color: rgb(235, 235, 240) !important;
+    color: rgb(83, 112, 98);
+}
+
+.button {
+    background-color: #fff;
+    border-color: #dbdbdb;
+    border-width: 1px;
+    color: #363636;
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(0.5em - 1px);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: calc(0.5em - 1px);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.nav_hover:hover {
+    color: rgb(63, 62, 71) !important;
+}
+
+.text_colorWhilte {
+    color: rgb(235, 235, 240);
+}
+
+.text_colorBlack {
+    color: rgb(0, 0, 0);
+}
+
+.navbar-link:not(.is-arrowless)::after {
+    border-color: rgb(63, 62, 71) !important;
+}
+
+.navbar-item:hover {
+    color: rgb(63, 62, 71) !important;
+}
+
+/* index.html */
+.bearlineX,
+.bearlineY {
+    background-image: url("Test.png");
+    background-repeat: repeat;
+}
+
+.choice {
+    border: 5px solid rgb(63, 62, 71);
+}
+
+.MainBottomLmage {
+    background-color: rgb(235, 235, 240);
+}
+
+/* Leeprofile.html CSS */
+.text_color {
+    color: rgb(235, 235, 240);
+}
+
+.choice {
+    border: 5px solid rgb(63, 62, 71);
+}
+
+.main {
+    margin: 20px;
+}
+
+.Image_size {
+    width: 300px;
+}
+
+.history h2 {
+    position: relative;
+    font-size: 33px;
+    color: #000;
+    line-height: 1;
+}
+
+.history h2:before {
+    content: "";
+    position: absolute;
+    left: -48px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
+    background: #fff;
+    border: 5px solid rgb(83, 112, 98);
+    box-sizing: border-box;
+}
+
+.history div {
+    position: relative;
+    padding: 0 0 0 48px;
+}
+
+.history div:before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #ddd;
+}
+
+.history div:first-child:before {
+    top: 10px;
+    height: calc(100% - 10px);
+}
+
+.history ol {
+  padding: 20px 0 74px;
+}
+
+.history li {
+  margin: 20px;
+  font-size: 17px;
+  color: #000;
+  line-height: 29px;
+}
+
+/* Party.html CSS */
+.diary {
+width: 600px;
+}
+
+.ice {
+border: 5px solid rgb(63, 62, 71);
+align-content: center;
+padding-bottom: 10%;
+}
+
+.center {
+margin: 0 auto;
+}
+
+.center span {
+display: inline-block;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+text-align: center;
+line-height: 100px;
+}
+
+
+/*ComputerLanguage*/
+.textBackground{
+  background-color: rgb(245, 245, 238);
+  width: 100%;
+}
+.sideBar{
+  background-color: rgb(235, 235, 240);
+}
+.marginTitle{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.marginText{
+  margin-left: 40px;
+  margin-left: 40px;
+	
+}
+.sideBarC:hover{
+  background-color: rgb(217, 217, 224);
+}
+.textTitle{
+    margin-top: 40px;
+}

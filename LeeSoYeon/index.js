@@ -39,17 +39,6 @@ function visible(current, total){
 }
 
 
-//WEB Crawling
 
-const axios = require("axios");
-const cheerio = require("cheerio");
-const log = console.log;
 
-const getHtml = async () => {
-  try {
-    return await axios.get("https://www.yna.co.kr/sports/all");
-  } catch (error) {
-    console.error(error);
-  }
-};
-
+//Party

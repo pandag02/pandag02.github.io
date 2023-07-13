@@ -208,3 +208,28 @@ line-height: 100px;
 .textTitle{
     margin-top: 40px;
 }
+
+
+/*Party*/
+.goUp{
+    bottom: 80px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px 1px rgb(198, 198, 198);
+    position: fixed;
+    z-index: 2;
+    border-color: #ffffff;
+}
+.goDown{
+    bottom: 40px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px 1px rgb(198, 198, 198);
+    position: fixed;
+    z-index: 2;
+    border-color: #ffffff;
+}
